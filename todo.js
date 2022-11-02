@@ -131,6 +131,11 @@ const render = () => {
         divToDoRow.classList = "todo-row todo-row-done";
         divToDoTitle.classList = "todo-title text-done";
         divToDoDate.classList = "todo-due-date todo-due-date-done"
+        //Spash
+        // divSplash = document.createElement("div");
+        // divSplash.innerHTML = "Done";
+        // divSplash.classList = "div-splash";
+        // divToDoRow.appendChild(divSplash);
       }
       //Attaches entire div to main
       divToDoTask.appendChild(divToDoRow);

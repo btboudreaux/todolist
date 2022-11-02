@@ -166,3 +166,16 @@ body {
 .todo-row-done:hover {
   background-color: grey;
 }
+
+/* .div-splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 130, 130, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 32px;
+} */
