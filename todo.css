@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("WolfRock.png");
+  background-size: cover;
+  color: rgb(31, 48, 51);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.center {
+  margin: 50px 0 auto 0;
+  width: 500px;
+  background-color: rgb(176, 176, 214);
+  opacity: .5;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom: 3px solid rgb(122, 70, 70);
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.header-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -45px;
+  margin: auto;
+  width: 34px;
+  height: 22px;
+  border-radius: 4px;
+  border: none;
+  opacity: 0;
+}
+
+.header:hover .header-edit {
+  opacity: 1;
+}
+
+
+.todo-row {
+  border: 1px solid white;
+  margin: 10px 12px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.todo-row:hover {
+  background-color: white;
+}
+
+.todo-title {
+  padding: 6px;
+}
+
+.todo-due-date {
+  display: flex;
+  justify-content: right;
+  font-weight: 900;
+  padding: 0 24px 6px 0;
+}
+
+.todo-buttons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -90px;
+  opacity: 0;
+}
+
+.todo-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  border: none;
+}
+
+.todo-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  padding: 4px;
+  border-radius: 4px;
+  border: none;
+  height: 23px;
+  width: 30px;
+}
+
+.todo-update,
+.header-update {
+  font-size: 8px;
+}
+
+.todo-edit:hover,
+.todo-delete:hover,
+.header-edit:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.todo-checkbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+}
+
+.todo-row:hover .todo-checkbox,
+.todo-row:hover .todo-buttons {
+  opacity: 1;
+}
+
+.todo-add-text-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-add-text,
+.todo-add-text {
+  flex: 1;
+  margin: 0 4px 0 0;
+}
+
+#due-date {
+  width: 15px;
+  margin: 0 8px 0 0;
+}
+
+.due-date {
+  width: 15px;
+}
+
+.text-done,
+.todo-due-date-done {
+  text-decoration: line-through 2px rgb(163, 35, 35);
+}
+
+.todo-row-done {
+  background-color: grey;
+}
+
+.todo-row-done:hover {
+  background-color: grey;
+}
